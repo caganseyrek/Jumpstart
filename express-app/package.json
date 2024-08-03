@@ -1,0 +1,49 @@
+{
+  "name": "express-app",
+  "private": true,
+  "version": "0.0.0",
+  "description": "description goes here",
+  "scripts": {
+    "dev": "nodemon server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<username>/<repository>.git"
+  },
+  "keywords": [
+    "keywords go here"
+  ],
+  "author": "<author>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/<username>/<repository>/issues"
+  },
+  "homepage": "https://github.com/<username>/<repository>#README",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.2",
+    "morgan": "^1.10.0",
+    "randombytes": "^2.1.0",
+    "sharp": "^0.33.4",
+    "tslib": "^2.6.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/body-parser": "^1.19.5",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.14.12",
+    "@types/randombytes": "^2.0.3",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
