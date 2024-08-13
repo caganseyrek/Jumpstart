@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #b75d69;
+  --secondary-color: #774c60;
+  --tertiary-color: #372549;
+
+  --link-color: #7b0828;
+
+  --dark-color: #111111;
+  --light-color: #fefefe;
+
+  --primary-text-color: var(--dark-color);
+  --secondary-text-color: #333333;
+
+  --success-background-color: #c4eebd;
+  --success-border-color: #2b8320;
+  --success-text-color: #0b2108;
+
+  --warning-background-color: #f9e2a9;
+  --warning-border-color: #a37500;
+  --warning-text-color: #291d00;
+
+  --info-background-color: #c3def1;
+  --info-border-color: #245c7f;
+  --info-text-color: #091720;
+
+  --danger-background-color: #ffdada;
+  --danger-border-color: #a30000;
+  --danger-text-color: #290000;
+
+  --container-background: #f9f9f9;
+  --container-border: #cccccc;
+
+  --font-size: 16px;
+  --line-height: 24px;
+
+  --smaller-font-size: 12px;
+  --smaller-line-height: 20px;
+
+  --letter-spacing: 0.15px;
+
+  --primary-font: "Inter";
+  --monospace-font: "";
+  --sans-serif-font: "";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  color: var(--dark-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
