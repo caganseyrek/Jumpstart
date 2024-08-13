@@ -2,7 +2,7 @@
 
 This repository contains various building blocks for starting a new project, or adding a feature to an existing project.
 
-## Installation and Usage
+## Installation
 
 First, clone the repository:
 
@@ -10,11 +10,12 @@ First, clone the repository:
 git clone https://github.com/caganseyrek/Jumpstart.git
 ```
 
-Then navigate to folder of the cloned repository:
+Then navigate to folder of the cloned repository and use the codes/projects you need:
 
 ```bash
 cd path/to/Jumpstart
 ```
+
 
 ## Descriptions
 
