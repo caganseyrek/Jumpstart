@@ -19,7 +19,6 @@ cd path/to/Jumpstart
 
 ## Descriptions
 
- * Codes inside `snippets/` folder should be used in existing projects, so you can just copy them into your project and adjust for your needs.
  * `express-app` and `vite-react-ts` are staring projects, their purpose is to accelerate the starting process when creating a new project. You can just copy the the folders, install the dependencies and start your project from there.
 
 ```bash
