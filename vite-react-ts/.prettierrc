@@ -12,10 +12,12 @@
     "^react(.*)$",
     "^react-dom$",
     "<THIRD_PARTY_MODULES>",
-    "^@/contexts/(.*)$",
-    "^@/components/(.*)$",
-    "^@/constants/(.*)$",
-    "^@/data/(.*)$"
+    "^[./]*(routes|pages)(/.*|$)",
+    "^[./]*(components|hooks|contexts|utils|services|handlers)(/.*|$)",
+    "^[./]*(constants|data)(/.*|$)",
+    "^[./]*localization(/.*|$)",
+    "^[./]*styles(/.*|$)",
+    "^[./]"
   ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
