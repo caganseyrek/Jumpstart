@@ -1,12 +1,12 @@
-import express, { Request, Response } from "express";
-import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
-import morgan from "morgan";
+import cookieParser from "cookie-parser";
+import "dotenv/config";
+import express, { Request, Response } from "express";
 import helmet, { HelmetOptions } from "helmet";
 import mongoose from "mongoose";
-import "dotenv/config";
+import morgan from "morgan";
 
-import { exampleRoute } from "./src/routes/route";
+import { exampleRoute } from "@/routes/route";
 
 // This project is just an example and should not use in production
 
@@ -16,18 +16,14 @@ const DATABASE_URI: string = process.env.DATABASE_URI!;
 const COOKIE_SECRET: string = process.env.COOKIE_SECRET!;
 
 const IS_DEV: boolean = process.env.IS_DEV === "true" ? true : false;
-const FRONTENTD_URL: string = IS_DEV
-  ? process.env.DEV_LOCALHOST!
-  : process.env.FRONTEND_URL!;
+const FRONTENTD_URL: string = IS_DEV ? process.env.DEV_LOCALHOST! : process.env.FRONTEND_URL!;
 
 // Database Connection
 mongoose.connect(DATABASE_URI);
 mongoose.connection.on("error", (error) =>
-  console.log(`Something went wrong with the database connection: \n${error}`)
+  console.log(`Something went wrong with the database connection: \n${error}`),
 );
-mongoose.connection.once("open", () =>
-  console.log("Successfully connected to the database.")
-);
+mongoose.connection.once("open", () => console.log("Successfully connected to the database."));
 
 // Express app
 const app: express.Application = express();
