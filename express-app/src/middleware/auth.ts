@@ -1,13 +1,17 @@
-import { Request, Response, NextFunction } from "express";
-import jwt from "jsonwebtoken";
+import { NextFunction, Request, Response } from "express";
+import { verify } from "jsonwebtoken";
 
-export default (req: Request, _res: Response, next: NextFunction) => {
-  const { token } = req.cookies;
-
+export default (req: Request, res: Response, next: NextFunction) => {
+  const token = req.headers.authorization?.toString();
   if (token) {
-    const decoded = jwt.verify(token, process.env.JWT_ACCESS_SECRET as string);
-    req.user = decoded;
+    try {
+      const tokenValue = token.split(" ")[1];
+      const decoded = verify(tokenValue, process.env.JWT_ACCESS_SECRET as string);
+      req.body.user = decoded;
+      return next();
+    } catch (error) {
+      return res.status(401).send("Unauthorized");
+    }
   }
-
-  next();
+  return res.status(401).send("Unauthorized");
 };
