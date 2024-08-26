@@ -11,12 +11,12 @@
   ],
   "importOrder": [
     "<THIRD_PARTY_MODULES>",
-    "^[./]*src(/.*|$)",
-    "^[./]*controllers(/.*|$)",
-    "^[./]*models(/.*|$)",
-    "^[./]*routes(/.*|$)",
-    "^[./]*middleware(/.*|$)",
-    "^[./]*localization(/.*|$)"
+    "^(?:[./@]*src)(/.*|$)",
+    "^(?:[./@]*controllers)(/.*|$)",
+    "^(?:[./@]*models)(/.*|$)",
+    "^(?:[./@]*routes)(/.*|$)",
+    "^(?:[./@]*middleware)(/.*|$)",
+    "^(?:[./@]*localization)(/.*|$)"
   ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
