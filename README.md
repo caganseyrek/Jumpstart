@@ -1,6 +1,6 @@
 # Jumpstart
 
-The projects in this repository are staring projects, their purpose is to accelerate the starting process when creating a new project. You can just copy the the folders, install the dependencies and start your project from there.
+The projects in this repository are staring projects, their purpose is to accelerate the starting process when creating a new project. After cloning the repo, you can just copy the the project folders you need, install the dependencies and start your own project from there.
 
 ## Installation
 
