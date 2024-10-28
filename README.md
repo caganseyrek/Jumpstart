@@ -1,6 +1,6 @@
 # Jumpstart
 
-This repository contains various building blocks for starting a new project, or adding a feature to an existing project.
+The projects in this repository are staring projects, their purpose is to accelerate the starting process when creating a new project. You can just copy the the folders, install the dependencies and start your project from there.
 
 ## Installation
 
@@ -16,12 +16,4 @@ Then navigate to folder of the cloned repository and use the codes/projects you 
 cd path/to/Jumpstart
 ```
 
-
-## Descriptions
-
- * `express-app` and `vite-react-ts` are staring projects, their purpose is to accelerate the starting process when creating a new project. You can just copy the the folders, install the dependencies and start your project from there.
-
-```bash
-npm i
-pnpm i
-```
+> **Note:** Projects do **not** have their own `.git/` folder inside them. Don't forget to initialize a new repository for the projects you use.
