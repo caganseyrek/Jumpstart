@@ -13,7 +13,7 @@ const loginSchema: ZodSchema = z.object({
 
 type LoginFormData = z.infer<typeof loginSchema>;
 
-const form_with_validation = () => {
+const ExampleForm = () => {
   const {
     handleSubmit,
     control,
@@ -61,4 +61,4 @@ const form_with_validation = () => {
   );
 };
 
-export default form_with_validation;
+export default ExampleForm;
