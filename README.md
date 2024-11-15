@@ -17,3 +17,7 @@ cd path/to/Jumpstart
 ```
 
 > **Note:** Projects do **not** have their own `.git/` folder inside them. Don't forget to initialize a new repository for the projects you use.
+
+## License
+
+This project is open-source and licensed under [MIT License](https://github.com/caganseyrek/Jumpstart/blob/main/LICENSE).
